@@ -7,13 +7,24 @@ button{
     margin: 0px;
     width: 80px;
     height: 80px;
+    border: 1px #FBC5C5 solid;
+    background-color: #FFFFFF;
     
 }
 
+button:hover{
+    background-color: #F7E2D6;
+}
+
+span{
+    font-size: 3em;
+}
+
 .sidebutton{
-    margin: 0px;
+    margin-top: 5px;
     width: 70px;
-    height: 150px;
+    height: 180px;
+    
 }
 
 #mainbox{
@@ -22,15 +33,19 @@ button{
     align-items: center;
     width: 450px;
     height: 500px;
-    border: 3px black solid;
+    border: 3px #66BFBF solid;
     border-radius: 20px;
 }
 
 #subbox1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
     margin-top: 12px;
     width: 410px;
     height: 130px;
-    border: 2px red solid;
+    border: 2px #66BFBF solid;
     border-radius: 20px;
 
 }
@@ -59,10 +74,6 @@ button{
     row-gap: 10px;
 }
 
-span{
-    font-size: 3em;
-}
-
 #row1, #row2, #row3, #row4{
     display: flex;
     flex-direction: row;
@@ -71,13 +82,40 @@ span{
 }
 
 .images1{
-    width: 50px;
+    width: 45px;
+    height: 50px;
+}
+
+#equalB{
+    width: 45px;
     height: 50px;
 }
 
 
+#upperDisplay{
+    margin-top: 5px;
+    /* border: 2px solid green; */
+    border-radius: 20px;
+    width: 100%;
+    height: 35px;
+    letter-spacing: 1.5px;
+    font-size: x-large;
+    font-family: sans-serif;    
+    padding: 10px;
+    
+    
+}
 
-#equal{
-    width: 40px;
+#display2{
+    /* border: 2px solid green; */
+    border-radius: 20px;
+    width: 100%;
     height: 50px;
+}
+
+#lowerDisplay{
+    padding: 10px;
+    letter-spacing: 1.5px;
+    font-size: x-large;
+    font-family: sans-serif;
 }

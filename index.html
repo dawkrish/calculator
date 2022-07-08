@@ -7,48 +7,53 @@
     <title>Calculator</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     <link rel="stylesheet" href="styles.css">
+    
 
 </head>
 <body>
     <div id="mainbox">
         <div id="subbox1">
-            <div ></div>
-            <div></div>
+            <div id="upperDisplay"></div>
+            <div id="display2">
+                <div id="lowerDisplay"></div>
+            </div>
         </div>
         <div id="subbox2">
             <div id="column1">
                 <div id="row1">
-                    <button><img src="images/delete.png" class="images1" alt=""></button>
-                    <button><img src="images/back.png" class="images1" alt=""></button>
-                    <button><span class="sup">x<sup>y</sup></span></button>
-                    <button><span class="sup">e<sup>x</sup></span</button>
+                    <button  data-set="delete"><img src="images/delete.png" class="images1" alt=""></button>
+                    <button data-set="erase"><img src="images/back.png" class="images1" alt=""></button>
+                    <button  data-set="multiply" data-key="x"><img src="images/multiply.png" class="images1" alt=""></button>
+                    <button data-set="divide" data-key="/"><img src="images/divide.png" class="images1" alt=""></button>
                 </div>
                 <div id="row2">
-                    <button><span>9</span></button>
-                    <button><span>8</span></button>
-                    <button><span>7</span></button>
-                    <button><img src="images/multiply.png" class="images1" alt=""></button>
+                    <button data-set="9"><span>9</span></button>
+                    <button data-set="8"><span>8</span></button>
+                    <button data-set="7"><span>7</span></button>
+                    <button data-set="0"><span>0</span></button>
                 </div>
                 <div id="row2">
-                    <button><span>6</span></button>
-                    <button><span>5</span></button>
-                    <button><span>4</span></button>
-                    <button><img src="images/divide.png" class="images1" alt=""></button>
+                    <button data-set="6"><span>6</span></button>
+                    <button data-set="5"><span>5</span></button>
+                    <button data-set="4"><span>4</span></button>
+                    <button  data-set="."><span>.</span></button>
                 </div>
                 <div id="row3">
-                    <button><span>3</span></button>
-                    <button><span>2</span></button>
-                    <button><span>1</span></button>
-                    <button><img src="images/equal.png"  id="equal" alt=""></button>
+                    <button data-set="3"><span>3</span></button>
+                    <button data-set="2"><span>2</span></button>
+                    <button data-set="1"><span>1</span></button>
+                    <button  data-set="subtract" data-key="-"><img src="images/subtract.png" alt="" class="images1"></button>
                 </div>
             </div>
             <div id="column2">
-                <button class="sidebutton"><img src="images/add.png" alt="" class="images1"></button>
-                <button class="sidebutton"><img src="images/subtract.png" alt="" class="images1"></button>
+                <button id="add" data-set="add" data-key="+" class="sidebutton"><img src="images/add.png" alt="" class="images1"></button>
+                <button id="equal" data-set="equal" data-key="=" class="sidebutton"><img src="images/equal.png"  id="equalB" alt=""></button>
+                
             </div>
             
             
        </div>
     </div>
+    <script  src="script.js"></script>
 </body>
 </html>
